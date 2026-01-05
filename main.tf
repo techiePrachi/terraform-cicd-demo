@@ -85,7 +85,7 @@ resource "aws_route_table_association" "public_assoc" {
 
 resource "aws_instance" "web"{
     ami = var.ami
-    instance_type = "t2.micro"
+    instance_type = "t3.micro"
     subnet_id = aws_subnet.this.id
     tags = {
         Name = "terraform-cicd-demo"
