@@ -1,0 +1,10 @@
+# Terraform local files
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Terraform variables (if secrets later)
+*.tfvars
+
+# OS files
+.DS_Store
